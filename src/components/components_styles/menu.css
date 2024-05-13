@@ -1,27 +1,31 @@
 /* TopMenu.css */
 .menu {
     position: fixed;
-    top: 0;
-    right: 0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    margin-top:20px;
+    margin-bottom:50px;
+    background-color:#00A9FF;
+    height:100px;
+  }
+
+  .menu div{
+    margin:0 10px;
+    border:none;
+    flex:1;
+    border-radius: 6px;
+    color:white;
+    font-size:40px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease;
+  }
+
+  .menu div:hover{
+    color:red;
+    cursor:pointer;
   }
   
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .menu li:last-child {
-    margin-right: 0;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: black;
-  }
   

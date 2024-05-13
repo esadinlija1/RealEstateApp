@@ -10,8 +10,6 @@ function App() {
   return (
   <>
     <Menu/>
-    <div class="container">
-    
       <div class="homepage-central-container">
         <div class="container">
           <h1>We help you find your dream home</h1>
@@ -25,9 +23,6 @@ function App() {
         </div>
       </div>
     
-     
-
-    </div>
   </>
 
   )
