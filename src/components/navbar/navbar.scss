@@ -6,6 +6,7 @@ nav{
     display:flex;
     height: 100px;
     align-items:center;
+    gap: 20px;
 
     .left{
         display:flex;
@@ -15,9 +16,7 @@ nav{
         gap:30px;
         padding:10px 20px;
 
-        img{
-            width:400px;
-        }
+        
 
         a {
             &:hover{
@@ -25,6 +24,8 @@ nav{
                 transition:all 0.4s ease;
             }
         }
+
+       
     }
 
     .right{
@@ -32,7 +33,10 @@ nav{
         flex:2;
         display: flex;
         justify-content: flex-end;
-        gap:10px;
+        align-items: center;
+        gap:30px;
+        height:100%;
+        padding:10px 20px;
 
         @include sm{
             background-color: white;
@@ -54,6 +58,17 @@ nav{
     }
 
     .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        span{
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 18px;
+            flex:1
+        }
         @include sm{
            display: contents;
         }
