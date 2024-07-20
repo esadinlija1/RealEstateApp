@@ -1,5 +1,6 @@
 import "./homePage.scss";
 import Buildings from "./buildings.jpg";
+import SearchBar from "../../searchBar/searchBar";
 
 
 function HomePage(){
@@ -16,6 +17,7 @@ function HomePage(){
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus suscipit, semper urna sed, sollicitudin lorem.    
                      Quisque a eros euismod, tempus eros a, posuere dolor. Maecenas ultrices vulputate consequat. 
                      Nulla facilisis tincidunt lectus vel vulputate. Morbi nec felis euismod, scelerisque lectus sed, commodo ante. Quisque dapibus feugiat massa. Mauris imperdiet, leo a aliquam aliquet, lectus nunc accumsan massa, nec suscipit ipsum nulla vitae velit. Integer eget orci gravida, euismod justo sit amet, rhoncus mi.</p>
+                     <SearchBar />
                 </div>
             </div>
             <div className="imageContainer">
