@@ -23,16 +23,15 @@ function SearchBar(){
                 <button className={query.type==="buy" ? "active" : ""} onClick={()=>swicthType("buy")}>Buy</button>
                 <button className={query.type==="rent" ? "active" : ""} onClick={()=>swicthType("rent")}>Rent</button>
             </div>
-            <div className="searchContainer">
-                <form>
-                    <input type="text" name="location" placeholder="City Location"/>
-                    <input type="number" name="minPrice" min={0} max={1000000000} placeholder="Min Price"/>
-                    <input type="number" name="maxPrice" min={0} max={1000000000} placeholder="Max Price"/>
-                </form>
-                <div className="searchButton">
+            <form>
+                <input type="text" name="location" placeholder="City Location"/>
+                <input type="number" name="minPrice" min={0} max={1000000000} placeholder="Min Price"/>
+                <input type="number" name="maxPrice" min={0} max={1000000000} placeholder="Max Price"/>
+                <button>
                     <img src={Search} alt="" />
-                </div>
-            </div>
+                </button>
+            </form>
+                
             
                 
          </div>
