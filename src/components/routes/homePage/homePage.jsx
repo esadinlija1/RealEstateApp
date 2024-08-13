@@ -4,6 +4,7 @@ import SearchBar from "../../searchBar/searchBar";
 import House from "./house.jpg";
 import Apartment from "./apartment.jpg";
 import OfficeSpace from "./officespace.png";
+import Card from "./card";
 
 
 function HomePage(){
@@ -23,38 +24,16 @@ function HomePage(){
                      <SearchBar />
                 </div>
                     <h1>We offer you</h1>
-                    <h2>Modern houses</h2>
-                    <div className="properties">
-                        <div className="property">
-                            <div className="picture">
-                                <img src={House} alt="" />
-                            </div>
-                            <div className="title">House1</div>
-                            <div className="attributes">
-                                <div className="row">
-                                    <div className="column">Price: 500000 BAM</div>
-                                    <div className="column">Location: 2017</div>
-                                </div>
-                                <div className="row">
-                                    <div className="column">Location: Address1</div>
-                                    <div className="column">Size: 300m2</div>
-                                </div>
-                            </div>
-                            <div className="button-container">
-                                <button>See more</button>
-                            </div>
-                        </div>
-                        
+                    <div className="cards-container">
+                      <Card title={"Modern Homes"} image={House}></Card>
+                      <Card title={"Appartments"} image={Apartment}></Card>
+                      <Card title={"Office Spaces"} image={OfficeSpace}></Card>
                     </div>
-                    <h2>Penthouse apartments</h2>
+            </div>
+
                     
-                    <h2>Office spaces for your company</h2>
-                 
             
-            </div>
-            <div className="imageContainer">
-                <img src={Buildings} alt="" />
-            </div>
+         
         </div>
         
     )
